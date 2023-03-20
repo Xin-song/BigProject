@@ -1,8 +1,6 @@
 """ Python 3 native (desktop/mobile) OAuth 2.0 example.
-
 This example can be run from the command line and will show you how the
 OAuth 2.0 flow should be handled if you are a web based application.
-
 Prerequisites:
     * Create an SSO application at developers.eveonline.com with the scope
       "esi-characters.read_blueprints.v1" and the callback URL
@@ -11,13 +9,6 @@ Prerequisites:
     * Have a Python 3 environment available to you (possibly by using a
       virtual environment: https://virtualenv.pypa.io/en/stable/).
     * Run pip install -r requirements.txt with this directory as your root.
-
-To run this example, make sure you have completed the prerequisites and then
-run the following command from this directory as the root:
-
->>> python esi_oauth_native.py
-
-then follow the prompts.
 """
 import base64
 import hashlib
