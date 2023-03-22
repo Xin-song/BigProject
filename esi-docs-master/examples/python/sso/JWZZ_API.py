@@ -586,3 +586,38 @@ def JWZZ_s_dogma_effects_info(effect_id):
 
 # %%
 # Here are the functiosn get path for Faction Warfare
+def JWZZ_s_faction_war_ch_stats(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/fw/stats/".format(character_id)
+    return path
+
+def JWZZ_s_faction_war_corp_stats(corporation_id):
+    path = "https://esi.evetech.net/latest/corporations/{corporation_id}/fw/stats/".format(corporation_id)
+    return path
+
+def JWZZ_s_faction_war_leaderboards():
+    path = "https://esi.evetech.net/latest/fw/leaderboards/".format()
+    return path
+
+def JWZZ_s_faction_war_leaderboards_chars():
+    path = "https://esi.evetech.net/latest/fw/leaderboards/characters/".format()
+    return path
+
+def JWZZ_s_faction_war_leaderboards_corps():
+    path = "https://esi.evetech.net/latest/fw/leaderboards/corporations/".format()
+    return path
+
+def JWZZ_s_faction_war_stats():
+    path = "https://esi.evetech.net/latest/fw/stats/".format()
+    return path
+
+def JWZZ_s_faction_war_systems():
+    path = "https://esi.evetech.net/latest/fw/systems/".format()
+    return path
+
+def JWZZ_s_faction_war_wars():
+    path = "https://esi.evetech.net/latest/fw/wars/".format()
+    return path
+
+
+# %%
+# Here are the functiosn get path for Fittings
