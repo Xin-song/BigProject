@@ -621,3 +621,171 @@ def JWZZ_s_faction_war_wars():
 
 # %%
 # Here are the functiosn get path for Fittings
+
+def JWZZ_s_fittings(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/fittings/".format(character_id)
+    return path
+
+# The other two are Post and Delete
+# ToDo
+# Add them if needed
+
+# %%
+# Here are the functiosn get path for Fleets
+
+#Todo
+# There are 4 Put, 3 Post, 3 Delete Esis in this section
+# Add them if needed.
+
+def JWZZ_s_fleet_char(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/fleet/".format(character_id)
+    return path
+
+def JWZZ_s_fleet(fleet_id):
+    path = "https://esi.evetech.net/latest/fleets/{}/".format(fleet_id)
+    return path
+
+def JWZZ_s_fleet_members(fleet_id):
+    path = "https://esi.evetech.net/latest/fleets/{}/members/".format(fleet_id)
+    return path
+
+def JWZZ_s_fleet_wings(fleet_id):
+    path = "https://esi.evetech.net/latest/fleets/{}/wings/".format(fleet_id)
+    return path
+
+# %%
+# Here are the functiosn get path for Incursions
+
+def JWZZ_s_incursions():
+    path = "https://esi.evetech.net/latest/incursions/".format()
+    return path
+
+# %%
+# Here are the functiosn get path for Industry
+
+def JWZZ_s_industry_char_jobs(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/industry/jobs/".format(character_id)
+    return path
+
+def JWZZ_s_industry_char_mining(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/mining/".format(character_id)
+    return path
+
+def JWZZ_s_industry_corp_mining_extractions(corporation_id):
+    path = "https://esi.evetech.net/latest/corporation/{}/mining/extractions/".format(corporation_id)
+    return path
+
+def JWZZ_s_industry_corp_mining_observers(corporation_id):
+    path = "https://esi.evetech.net/latest/corporation/{corporation_id}/mining/observers/".format(corporation_id)
+    return path
+
+def JWZZ_s_industry_corp_mining_observers_record(corporation_id,observer_id):
+    path = "https://esi.evetech.net/latest/corporation/{corporation_id}/mining/observers/{}/".format(corporation_id,observer_id)
+    return path
+
+def JWZZ_s_industry_corp_jobs(corporation_id):
+    path = "https://esi.evetech.net/latest/corporations/{}/industry/jobs/".format(corporation_id)
+    return path
+
+def JWZZ_s_industry_facilities():
+    path = "https://esi.evetech.net/latest/industry/facilities/".format()
+    return path
+
+def JWZZ_s_industry_systems():
+    path = "https://esi.evetech.net/latest/industry/systems/".format()
+    return path
+
+# %%
+# Here are the functiosn get path for Insurance
+
+def JWZZ_s_insurance():
+    path = "https://esi.evetech.net/latest/insurance/prices/".format()
+    return path
+
+# %%
+# Here are the functiosn get path for Killmails
+
+def JWZZ_s_kill_char(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/killmails/recent/".format(character_id)
+    return path
+
+def JWZZ_s_kill_corp(corporation_id):
+    path = "https://esi.evetech.net/latest/corporations/{}/killmails/recent/".format(corporation_id)
+    return path
+
+def JWZZ_s_kill_mail(killmail_id,killmail_hash):
+    path = "https://esi.evetech.net/latest/killmails/{}/{}/".format(killmail_id,killmail_hash)
+    return path
+
+# %%
+# Here are the functiosn get path for Locations
+
+def JWZZ_s_loc_char(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/location/".format(character_id)
+    return path
+
+def JWZZ_s_loc_char_online(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/online/".format(character_id)
+    return path
+
+def JWZZ_s_loc_char_ship(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/ship/".format(character_id)
+    return path
+
+# %%
+# Here are the functiosn get path for Loyalty
+
+def JWZZ_s_loy_char(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/loyalty/points/".format(character_id)
+    return path
+
+def JWZZ_s_loy_offers(corporation_id):
+    path = "https://esi.evetech.net/latest/loyalty/stores/{}/offers/".format(corporation_id)
+    return path
+
+# %%
+# Here are the functiosn get path for Mail
+
+#Todo
+# There are 1 Put, 2 Post, 2 Delete Esis in this section
+# Add them if needed.
+
+def JWZZ_s_mail_char(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/mail/".format(character_id)
+    return path
+
+def JWZZ_s_mail_char_content(character_id,mail_id):
+    path = "https://esi.evetech.net/latest/characters/{}/mail/{}/".format(character_id,mail_id)
+    return path
+
+def JWZZ_s_mail_char_labels(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/mail/labels/".format(character_id)
+    return path
+
+def JWZZ_s_mail_char_lists(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/mail/lists/".format(character_id)
+    return path
+
+# %%
+# Here are the functiosn get path for Market
+
+def JWZZ_s_mkt_char_orders(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/orders/".format(character_id)
+    return path
+
+def JWZZ_s_mkt_char_orders_history(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/orders/history/".format(character_id)
+    return path
+
+
+
+
+
+
+
+
+
+
+
+
+
