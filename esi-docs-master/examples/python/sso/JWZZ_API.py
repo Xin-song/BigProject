@@ -591,7 +591,7 @@ def JWZZ_s_faction_war_ch_stats(character_id):
     return path
 
 def JWZZ_s_faction_war_corp_stats(corporation_id):
-    path = "https://esi.evetech.net/latest/corporations/{corporation_id}/fw/stats/".format(corporation_id)
+    path = "https://esi.evetech.net/latest/corporations/{}/fw/stats/".format(corporation_id)
     return path
 
 def JWZZ_s_faction_war_leaderboards():
@@ -676,11 +676,11 @@ def JWZZ_s_industry_corp_mining_extractions(corporation_id):
     return path
 
 def JWZZ_s_industry_corp_mining_observers(corporation_id):
-    path = "https://esi.evetech.net/latest/corporation/{corporation_id}/mining/observers/".format(corporation_id)
+    path = "https://esi.evetech.net/latest/corporation/{}/mining/observers/".format(corporation_id)
     return path
 
 def JWZZ_s_industry_corp_mining_observers_record(corporation_id,observer_id):
-    path = "https://esi.evetech.net/latest/corporation/{corporation_id}/mining/observers/{}/".format(corporation_id,observer_id)
+    path = "https://esi.evetech.net/latest/corporation/{}/mining/observers/{}/".format(corporation_id,observer_id)
     return path
 
 def JWZZ_s_industry_corp_jobs(corporation_id):
@@ -776,6 +776,314 @@ def JWZZ_s_mkt_char_orders(character_id):
 def JWZZ_s_mkt_char_orders_history(character_id):
     path = "https://esi.evetech.net/latest/characters/{}/orders/history/".format(character_id)
     return path
+
+def JWZZ_s_mkt_corp_orders(corporation_id):
+    path = "https://esi.evetech.net/latest/corporations/{}/orders/".format(corporation_id)
+    return path
+
+def JWZZ_s_mkt_corp_orders_history(corporation_id):
+    path = "https://esi.evetech.net/latest/corporations/{}/orders/history/".format(corporation_id)
+    return path
+
+def JWZZ_s_mkt_regi_history(region_id):
+    path = "https://esi.evetech.net/latest/markets/{}/history/".format(region_id)
+    return path
+
+def JWZZ_s_mkt_regi_orders(region_id):
+    path = "https://esi.evetech.net/latest/markets/{}/orders/".format(region_id)
+    return path
+
+def JWZZ_s_mkt_regi_types(region_id):
+    path = "https://esi.evetech.net/latest/markets/{}/types/".format(region_id)
+    return path
+
+def JWZZ_s_mkt_groups():
+    path = "https://esi.evetech.net/latest/markets/groups/".format()
+    return path
+
+def JWZZ_s_mkt_groups_info(market_group_id):
+    path = "https://esi.evetech.net/latest/markets/groups/{}/".format(market_group_id)
+    return path
+
+def JWZZ_s_mkt_prices():
+    path = "https://esi.evetech.net/latest/markets/prices/".format()
+    return path
+
+def JWZZ_s_mkt_stru(structure_id):
+    path = "https://esi.evetech.net/latest/markets/structures/{}/".format(structure_id)
+    return path
+
+# %%
+# Here are the functiosn get path for Opportunities
+# 不会真有人调用这几个ESI吧？
+
+def JWZZ_s_oppo_char(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/opportunities/".format(character_id)
+    return path
+
+def JWZZ_s_oppo_groups():
+    path = "https://esi.evetech.net/latest/opportunities/groups/".format()
+    return path
+
+def JWZZ_s_oppo_groups_info(group_id):
+    path = "https://esi.evetech.net/latest/opportunities/groups/{}/".format(group_id)
+    return path
+
+def JWZZ_s_oppo_groups_tasks():
+    path = "https://esi.evetech.net/latest/opportunities/tasks/".format()
+    return path
+
+def JWZZ_s_oppo_groups_task(task_id):
+    path = "https://esi.evetech.net/latest/opportunities/tasks/{}/".format(task_id)
+    return path
+
+# %%
+# Here are the functiosn get path for Planetary Interaction
+
+def JWZZ_s_PI_char(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/planets/".format(character_id)
+    return path
+
+def JWZZ_s_PI_char_planet(character_id,planet_id):
+    path = "https://esi.evetech.net/latest/characters/{}/planets/{}/".format(character_id,planet_id)
+    return path
+
+def JWZZ_s_PI_corp_offices(corporation_id):
+    path = "https://esi.evetech.net/latest/corporations/{}/customs_offices/".format(corporation_id)
+    return path
+
+def JWZZ_s_PI_schematic(schematic_id):
+    path = "https://esi.evetech.net/latest/universe/schematics/{}/".format(schematic_id)
+    return path
+
+# %%
+# Here are the functiosn get path for Routes
+
+def JWZZ_s_routes(origin,destination):
+    path = "https://esi.evetech.net/latest/route/{}/{}/".format(origin,destination)
+    return path
+
+# %%
+# Here are the functiosn get path for Search
+
+def JWZZ_s_search(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/search/".format(character_id)
+    return path
+
+# %%
+# Here are the functiosn get path for Skills
+
+def JWZZ_s_skill_char_attri(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/attributes/".format(character_id)
+    return path
+
+def JWZZ_s_skill_char_queue(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/skillqueue/".format(character_id)
+    return path
+
+def JWZZ_s_skill_char_skills(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/skills/".format(character_id)
+    return path
+
+# %%
+# Here are the functiosn get path for Sovereignity
+
+def JWZZ_s_sovereignty_campaigns():
+    path = "https://esi.evetech.net/latest/sovereignty/campaigns/".format()
+    return path
+
+def JWZZ_s_sovereignty_map():
+    path = "https://esi.evetech.net/latest/sovereignty/map/".format()
+    return path
+
+def JWZZ_s_sovereignty_structures():
+    path = "https://esi.evetech.net/latest/sovereignty/structures/".format()
+    return path
+
+# %%
+# Here are the functiosn get path for Status
+
+def JWZZ_s_status():
+    path = "https://esi.evetech.net/latest/status/".format()
+    return path
+
+# %%
+# Here are the functiosn get path for Universe
+
+# Todo There are two post ESIs
+
+def JWZZ_s_uni_ancestries():
+    path = "https://esi.evetech.net/latest/universe/ancestries/".format()
+    return path
+
+def JWZZ_s_uni_asteroid_belts(asteroid_belt_id):
+    path = "https://esi.evetech.net/latest/universe/asteroid_belts/{}/".format(asteroid_belt_id)
+    return path
+
+def JWZZ_s_uni_bloodlines():
+    path = "https://esi.evetech.net/latest/universe/bloodlines/".format()
+    return path
+
+def JWZZ_s_uni_categories_info(category_id):
+    path = "https://esi.evetech.net/latest/universe/categories/{}/".format(category_id)
+    return path
+
+def JWZZ_s_uni_constellations():
+    path = "https://esi.evetech.net/latest/universe/constellations/".format()
+    return path
+
+def JWZZ_s_uni_constellations_info(constellation_id):
+    path = "https://esi.evetech.net/latest/universe/constellations/{}/".format(constellation_id)
+    return path
+
+def JWZZ_s_uni_factions():
+    path = "https://esi.evetech.net/latest/universe/factions/".format()
+    return path
+
+def JWZZ_s_uni_graphics():
+    path = "https://esi.evetech.net/latest/universe/graphics/".format()
+    return path
+
+def JWZZ_s_uni_graphics_info(graphic_id):
+    path = "https://esi.evetech.net/latest/universe/graphics/{}/".format(graphic_id)
+    return path
+
+def JWZZ_s_uni_groups():
+    path = "https://esi.evetech.net/latest/universe/groups/".format()
+    return path
+
+def JWZZ_s_uni_groups_info(group_id):
+    path = "https://esi.evetech.net/latest/universe/groups/{}/".format(group_id)
+    return path
+
+def JWZZ_s_uni_moons(moon_id):
+    path = "https://esi.evetech.net/latest/universe/moons/{}/".format(moon_id)
+    return path
+
+def JWZZ_s_uni_planets_info(planet_id):
+    path = "https://esi.evetech.net/latest/universe/planets/{}/".format(planet_id)
+    return path
+
+def JWZZ_s_uni_races():
+    path = "https://esi.evetech.net/latest/universe/races/".format()
+    return path
+
+def JWZZ_s_uni_regions():
+    path = "https://esi.evetech.net/latest/universe/regions/".format()
+    return path
+
+def JWZZ_s_uni_regions_info(region_id):
+    path = "https://esi.evetech.net/latest/universe/regions/{}/".format(region_id)
+    return path
+
+def JWZZ_s_uni_stargates_info(stargate_id):
+    path = "https://esi.evetech.net/latest/universe/stargates/{}/".format(stargate_id)
+    return path
+
+def JWZZ_s_uni_stars_info(star_id):
+    path = "https://esi.evetech.net/latest/universe/stars/{}/".format(star_id)
+    return path
+
+def JWZZ_s_uni_stations_info(station_id):
+    path = "https://esi.evetech.net/latest/universe/stations/{}/".format(station_id)
+    return path
+
+def JWZZ_s_uni_structures():
+    path = "https://esi.evetech.net/latest/universe/structures/".format()
+    return path
+
+def JWZZ_s_uni_structures_info(structure_id):
+    path = "https://esi.evetech.net/latest/universe/structures/{}/".format(structure_id)
+    return path
+
+def JWZZ_s_uni_system_jumps():
+    path = "https://esi.evetech.net/latest/universe/system_jumps/".format()
+    return path
+
+def JWZZ_s_uni_system_kills():
+    path = "https://esi.evetech.net/latest/universe/system_kills/".format()
+    return path
+
+def JWZZ_s_uni_systems():
+    path = "https://esi.evetech.net/latest/universe/systems/".format()
+    return path
+
+def JWZZ_s_uni_systems_info(system_id):
+    path = "https://esi.evetech.net/latest/universe/systems/{}/".format(system_id)
+    return path
+
+def JWZZ_s_uni_types():
+    path = "https://esi.evetech.net/latest/universe/types/".format()
+    return path
+
+def JWZZ_s_uni_types_info(type_id):
+    path = "https://esi.evetech.net/latest/universe/types/{}/".format(type_id)
+    return path
+
+# %%
+# Here are the functiosn get path for User Interface
+
+# Todo
+# All are post esis
+
+# %%
+# Here are the functiosn get path for Wallet
+
+def JWZZ_s_wallet_char(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/wallet/".format(character_id)
+    return path
+
+def JWZZ_s_wallet_char_journal(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/wallet/journal/".format(character_id)
+    return path
+
+def JWZZ_s_wallet_char_transactions(character_id):
+    path = "https://esi.evetech.net/latest/characters/{}/wallet/transactions/".format(character_id)
+    return path
+
+def JWZZ_s_wallet_corp(corporation_id):
+    path = "https://esi.evetech.net/latest/corporations/{}/wallet/".format(corporation_id)
+    return path
+
+def JWZZ_s_wallet_corp_journal(corporation_id,division):
+    path = "https://esi.evetech.net/latest/corporations/{}/wallet/{}/journal/".format(corporation_id,division)
+    return path
+
+def JWZZ_s_wallet_corp_transactions(corporation_id,division):
+    path = "https://esi.evetech.net/latest/corporations/{}/wallet/{}/transactions/".format(corporation_id,division)
+    return path
+
+# %%
+# Here are the functiosn get path for Wars
+
+def JWZZ_s_war():
+    path = "https://esi.evetech.net/latest/wars/".format()
+    return path
+
+def JWZZ_s_war_info(war_id):
+    path = "https://esi.evetech.net/latest/wars/{}/".format(war_id)
+    return path
+
+def JWZZ_s_war_killmails(war_id):
+    path = "https://esi.evetech.net/latest/wars/{}/killmails/".format(war_id)
+    return path
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
